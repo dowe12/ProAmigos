@@ -50,9 +50,9 @@
                             href="#">Documentos</a>
                     </li>
                 </ul>
-                <button id="navAction"
+                <button id="navAction" href=""
                     class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Ingresar
+                    <a href="{{route('login')}}">Ingresar</a>
                 </button>
             </div>
         </div>
@@ -65,17 +65,10 @@
         <!--Content before waves-->
         <div class="inner-header flex">
             <!--Just the logo.. Don't mind this-->
-            <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-                xml:space="preserve">
-                <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-                <g>
-                    <path fill="#fff"
-                        d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
-        C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-        c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
-                </g>
-            </svg>
+            <img class="mr-5"
+            src="{{ asset('logowhite.png') }}"
+            width="40" height="90"
+             />
             <h1>Pro Amigos</h1>
         </div>
 
@@ -97,61 +90,107 @@
         </div>
     </div>
     <!--Waves end-->
-
+    <br>
     <br>
     <br>
 
     <!--content--->
 
+    <div class="section1">
+        <div class="container mx-auto">
+            <!-- Three columns of text below the carousel -->
+            <div class="flex flex-wrap justify-center">
+                <div class="lg:w-2/12 p-4">
+                </div>
+                <div class="lg:w-4/12 p-4">
+                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                        aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <image
+                            xlink:href="https://fmioffice.com/wp-content/uploads/2016/06/AdobeStock_109439683_opt.jpg"
+                            x="-45" y="-40" width="160%" height="160%" />
+                    </svg>
+                    <h2 class="text-2xl font-bold text-center mt-4">Contruimos Juntos</h2>
+                    <p class="text-justify mt-4">Con nuestros planes de préstamos de bajo interés, te ayudamos a
+                        alcanzar
+                        tus sueños y te acompañamos en el proceso.</p>
+                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Contactar
+                            Asesor
+                            &raquo;</a></p>
+                </div><!-- /.lg:w-4 -->
+                <div class="lg:w-4/12 p-4">
+                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                        aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <image
+                            xlink:href="https://t4.ftcdn.net/jpg/01/54/84/15/360_F_154841553_w2WSjXdL3YhxHWU05lOlNpCFYMHN1FTo.jpg"
+                            x="-65" y="-40" width="160%" height="160%" />
+                    </svg>
+                    <h2 class="text-2xl font-bold text-center mt-4">¿Quieres saber más?</h2>
+                    <p class="text-justify mt-4">En esta sección podrás encontrar las últimas novedades de ProAmigos a
+                        las
+                        que te invitamos para ser parte de esta comunidad</p>
+                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Más
+                            Información &raquo;</a></p>
+                </div><!-- /.lg:w-4 -->
+                <div class="lg:w-2/12 p-4">
+                </div>
+            </div><!-- /.flex -->
+        </div><!-- /.container -->
+        <br>
+        <br>
+        <div class="container mx-auto">
+            <!-- Three columns of text below the carousel -->
+            <div class="flex flex-wrap justify-center">
+                <div class="lg:w-2/12 p-4">
+                </div>
+                <div class="lg:w-4/12 p-4">
+                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                        aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <image
+                            xlink:href="https://media.istockphoto.com/id/1179567323/photo/happy-handsome-technical-support-operator-with-headset-working-in-call-centre.jpg?s=612x612&w=0&k=20&c=RtJPY8sgQG48Q54mG7MMC7f9cVPa5g_01KLul76sJjI="
+                            x="-45" y="-40" width="160%" height="160%" />
+                    </svg>
+                    <h2 class="text-2xl font-bold text-center mt-4"> El Primer Paso</h2>
+                    <p class="text-justify mt-4">¿Estás listo? Contacta a uno de nuestros asesores y comienza el camino
+                        a la vida que deseas.</p>
+                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Contactar
+                            Asesor
+                            &raquo;</a></p>
+                </div><!-- /.lg:w-4 -->
+                <div class="lg:w-4/12 p-4">
+                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                        aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <image
+                            xlink:href="https://media.istockphoto.com/id/1223342144/photo/couple-saving-money-in-piggybank.jpg?s=612x612&w=0&k=20&c=05eGbJ3O5to9ZLt1XMnmI5d76Sd-eU6PzuL2Y9D7Tl8="
+                            x="-65" y="-40" width="160%" height="160%" />
+                    </svg>
+                    <h2 class="text-2xl font-bold text-center mt-4">¿Tienes dudas?</h2>
+                    <p class="text-justify mt-4">No te preocupes, estamos para ayudarte. Conoce aquí más información
+                        sobre nuestros planes de ahorro para acercarte a tus sueños.</p>
+                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Más
+                            Planes de Ahorro &raquo;</a></p>
+                </div><!-- /.lg:w-4 -->
+                <div class="lg:w-2/12 p-4">
+                </div>
+            </div><!-- /.flex -->
+        </div><!-- /.container -->
 
-    <div class="container mx-auto">
-        <!-- Three columns of text below the carousel -->
-        <div class="flex flex-wrap justify-center">
-            <div class="lg:w-2/12 p-4">
-            </div>
-            <div class="lg:w-4/12 p-4">
-                <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                    aria-label="Placeholder: 140x140">
-                    <title>Placeholder</title>
-                    <image xlink:href="https://fmioffice.com/wp-content/uploads/2016/06/AdobeStock_109439683_opt.jpg"
-                        x="-45" y="-40" width="160%" height="160%" />
-                </svg>
-                <h2 class="text-2xl font-bold text-center mt-4">Contruimos Juntos</h2>
-                <p class="text-justify mt-4">Con nuestros planes de préstamos de bajo interés, te ayudamos a alcanzar
-                    tus sueños y te acompañamos en el proceso.</p>
-                <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Contactar Asesor
-                        &raquo;</a></p>
-            </div><!-- /.lg:w-4 -->
-            <div class="lg:w-4/12 p-4">
-                <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                    aria-label="Placeholder: 140x140">
-                    <title>Placeholder</title>
-                    <image
-                        xlink:href="https://t4.ftcdn.net/jpg/01/54/84/15/360_F_154841553_w2WSjXdL3YhxHWU05lOlNpCFYMHN1FTo.jpg"
-                        x="-65" y="-40" width="160%" height="160%" />
-                </svg>
-                <h2 class="text-2xl font-bold text-center mt-4">¿Quieres saber más?</h2>
-                <p class="text-justify mt-4">En esta sección podrás encontrar las últimas novedades de ProAmigos a las
-                    que te invitamos para ser parte de esta comunidad</p>
-                <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Más
-                        Información &raquo;</a></p>
-            </div><!-- /.lg:w-4 -->
-            <div class="lg:w-2/12 p-4">
-            </div>
-        </div><!-- /.flex -->
-    </div><!-- /.container -->
 
-
-    <br>
-    <br>
-
+        <br>
+        <br>
+    </div>
     <!--footer -->
 
     <footer class="bg-white dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl">
-            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
+            <div class="grid grid-cols-2 gap-4 px-4 py-6 lg:py-8 md:grid-cols-3">
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">¿Quiénes somos?
                     </h2>
@@ -289,5 +328,4 @@
         return false;
     }
 </script>
-
 </html>
