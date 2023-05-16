@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/* Rutas publicas chavales*/
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+/* Rutas privadas chavales*/
+
+Route::get('/posts',[PostController::class,'index'])->name('posts.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -27,5 +34,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+
+
 
 require __DIR__.'/auth.php';

@@ -8,7 +8,6 @@
     <title>Laravel</title>
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <link rel="stylesheet" href="{{ asset('/css.css') }}">
 
 </head>
@@ -181,6 +180,7 @@
                 </div>
             </div><!-- /.flex -->
         </div><!-- /.container -->
+
 
 
         <br>
