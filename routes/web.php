@@ -17,13 +17,20 @@ use App\Http\Controllers\PostController;
 /* Rutas publicas chavales*/
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/simulador', function () {
+    return view('simulator');
+})->name('simulador');
+
+
 
 
 
 /* Rutas privadas chavales*/
 
 Route::get('/posts',[PostController::class,'index'])->name('posts.index');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

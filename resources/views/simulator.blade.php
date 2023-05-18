@@ -9,7 +9,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('/css.css') }}">
-
 </head>
 
 <style>
@@ -18,25 +17,25 @@
 </style>
 
 <body>
-
-     <!-- navbar -->
+    <!-- navbar -->
 <nav class="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
 	<div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
 		<!-- Logo -->
 		<div class="text-indigo-500 md:order-1">
 			<!-- Heroicon - Chip Outline -->
-			<img class="mr-5"
-            src="{{ asset('logo.png') }}"
-            width="40" height="90"
-             />
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+				stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+			</svg>
 		</div>
 		<div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
 			<ul class="flex font-semibold justify-between">
                 <!-- Active Link = text-indigo-500
                 Inactive Link = hover:text-indigo-500 -->
-				<li class="md:px-4 md:py-2 text-indigo-500"><a href="{{ route('home') }}">Home</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('home') }}">Home</a></li>
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">¿Quienes somos?</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('simulador') }}">Simulador de credito</a></li>
+				<li class="md:px-4 md:py-2 text-indigo-500"><a href="{{ route('simulador') }}">Simulador de credito</a></li>
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Noticias</a></li>
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Documentos</a></li>
 			</ul>
@@ -50,134 +49,87 @@
 	</div>
 </nav>
 
-    <!-- main -->
-    <div class="header">
-
-        <!--Content before waves-->
-        <div class="inner-header flex">
-            <!--Just the logo.. Don't mind this-->
-            <img class="mr-5"
-            src="{{ asset('logowhite.png') }}"
-            width="40" height="90"
-             />
-            <h1 class="text-6xl">Pro Amigos</h1>
-        </div>
-
-        <!--Waves Container-->
-        <div>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                </g>
-            </svg>
-        </div>
-    </div>
-    <!--Waves end-->
-    <br>
-    <br>
-    <br>
-
     <!--content--->
 
-    <div class="section1">
-        <div class="container mx-auto">
-            <!-- Three columns of text below the carousel -->
-            <div class="flex flex-wrap justify-center">
-                <div class="lg:w-2/12 p-4">
-                </div>
-                <div class="lg:w-4/12 p-4">
-                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                        aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <image
-                            xlink:href="https://fmioffice.com/wp-content/uploads/2016/06/AdobeStock_109439683_opt.jpg"
-                            x="-45" y="-40" width="160%" height="160%" />
-                    </svg>
-                    <h2 class="text-2xl font-bold text-center mt-4">Contruimos Juntos</h2>
-                    <p class="text-justify mt-4">Con nuestros planes de préstamos de bajo interés, te ayudamos a
-                        alcanzar
-                        tus sueños y te acompañamos en el proceso.</p>
-                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Contactar
-                            Asesor
-                            &raquo;</a></p>
-                </div><!-- /.lg:w-4 -->
-                <div class="lg:w-4/12 p-4">
-                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                        aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <image
-                            xlink:href="https://t4.ftcdn.net/jpg/01/54/84/15/360_F_154841553_w2WSjXdL3YhxHWU05lOlNpCFYMHN1FTo.jpg"
-                            x="-65" y="-40" width="160%" height="160%" />
-                    </svg>
-                    <h2 class="text-2xl font-bold text-center mt-4">¿Quieres saber más?</h2>
-                    <p class="text-justify mt-4">En esta sección podrás encontrar las últimas novedades de ProAmigos a
-                        las
-                        que te invitamos para ser parte de esta comunidad</p>
-                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Más
-                            Información &raquo;</a></p>
-                </div><!-- /.lg:w-4 -->
-                <div class="lg:w-2/12 p-4">
-                </div>
-            </div><!-- /.flex -->
-        </div><!-- /.container -->
-        <br>
-        <br>
-        <div class="container mx-auto">
-            <!-- Three columns of text below the carousel -->
-            <div class="flex flex-wrap justify-center">
-                <div class="lg:w-2/12 p-4">
-                </div>
-                <div class="lg:w-4/12 p-4">
-                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                        aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <image
-                            xlink:href="https://media.istockphoto.com/id/1179567323/photo/happy-handsome-technical-support-operator-with-headset-working-in-call-centre.jpg?s=612x612&w=0&k=20&c=RtJPY8sgQG48Q54mG7MMC7f9cVPa5g_01KLul76sJjI="
-                            x="-45" y="-40" width="160%" height="160%" />
-                    </svg>
-                    <h2 class="text-2xl font-bold text-center mt-4"> El Primer Paso</h2>
-                    <p class="text-justify mt-4">¿Estás listo? Contacta a uno de nuestros asesores y comienza el camino
-                        a la vida que deseas.</p>
-                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Contactar
-                            Asesor
-                            &raquo;</a></p>
-                </div><!-- /.lg:w-4 -->
-                <div class="lg:w-4/12 p-4">
-                    <svg class="rounded-full w-48 h-48 mx-auto" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                        aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <image
-                            xlink:href="https://media.istockphoto.com/id/1223342144/photo/couple-saving-money-in-piggybank.jpg?s=612x612&w=0&k=20&c=05eGbJ3O5to9ZLt1XMnmI5d76Sd-eU6PzuL2Y9D7Tl8="
-                            x="-65" y="-40" width="160%" height="160%" />
-                    </svg>
-                    <h2 class="text-2xl font-bold text-center mt-4">¿Tienes dudas?</h2>
-                    <p class="text-justify mt-4">No te preocupes, estamos para ayudarte. Conoce aquí más información
-                        sobre nuestros planes de ahorro para acercarte a tus sueños.</p>
-                    <p class="text-center mt-4"><a class="btn btn-secondary" href="#" role="button">Más
-                            Planes de Ahorro &raquo;</a></p>
-                </div><!-- /.lg:w-4 -->
-                <div class="lg:w-2/12 p-4">
-                </div>
-            </div><!-- /.flex -->
-        </div><!-- /.container -->
+    <div class="column-1 h-40"></div>
 
+    <div class="flex mb-4">
+        <div class="w-1/3 h-12"></div>
+        <div class="w-1/3 h-12">
+            <form>
+                <div class="mb-4">
+                    <label for="tasa_interes" class="text-lg font-medium">Tipo de Crédito (% Tasa de
+                        Interés Anual):</label>
+                    <select id="tasa_interes"
+                        class="mt-3 bg-white-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
+                        <option value="20">Ordinario (20%)</option>
+                        <option value="10">Educativo (10%)</option>
+                        <option value="15">Turismo (15%)</option>
+                        <option value="13">Calamidad (13%)</option>
+                        <option value="16">Mejora de Vivienda (16%)</option>
+                    </select>
+                </div>
 
+                <div class="mb-4">
+                    <label for="monto_credito" class="text-lg font-medium">Monto del crédito:</label>
+                    <input type="text" id="monto_credito"
+                        class="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Ingresa el monto del crédito" required>
+                </div>
+                <div class="mb-4">
+                    <label for="plazo_meses" class="text-lg font-medium">Plazo (en meses):</label>
+                    <input for="plazo_meses" type="text" id="plazo_meses"
+                        class="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Ingresa el plazo del crédito en meses" required>
+                </div>
 
-        <br>
-        <br>
+                <button id="calcular" type="submit"
+                    class="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">calcular</button>
+            </form>
+        </div>
+        <div class="w-1/3 h-12"></div>
     </div>
+
+
+    <!-- Resultado Modal-->
+    <div id="resultado_simulador" class="hidden" style="margin-left:34%">
+        <div class="relative w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-medium text-gray-900 dark:text-black">
+                        Resultado
+                    </h3>
+                    <button id="cerrar_boton"type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="small-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+
+                <p class="flex justify-center p-4">Mensualidad: <span id="mensualidad"></span></p>
+                <p class="flex justify-center p-4">Intereses: <span id="intereses"></span></p>
+                <p class="flex justify-center p-4">Total a pagar: <span id="total"></span></p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="column-1 h-40"></div>
+    <div class="column-1 h-96"></div>
+
+
+
     <!--footer -->
 
     <footer class="  text-center ">
@@ -281,6 +233,39 @@
 
 
 </body>
+<script>
+    document.querySelector('#calcular').addEventListener('click', function(event) {
+        const tasaInteres = parseFloat(document.querySelector('#tasa_interes').value);
+        const montoCredito = parseFloat(document.querySelector('#monto_credito').value);
+        const plazoMeses = parseInt(document.querySelector('#plazo_meses').value);
+
+        // Verificar si algún campo está vacío
+        if (isNaN(tasaInteres) || isNaN(montoCredito) || isNaN(plazoMeses)) {
+            alert('Por favor, complete todos los campos antes de calcular.');
+            return; // Detener la ejecución del código si hay campos vacíos
+        }
+
+        const interesMensual = tasaInteres / 100 / 12;
+        const mensualidad = (montoCredito * interesMensual) / (1 - Math.pow(1 + interesMensual, -plazoMeses));
+        const intereses = mensualidad * plazoMeses - montoCredito;
+        const total = montoCredito + intereses;
+
+        document.querySelector('#resultado_simulador').style.display = 'block';
+        document.querySelector('#mensualidad').textContent = `$${mensualidad.toFixed(2)}`;
+        document.querySelector('#intereses').textContent = `$${intereses.toFixed(2)}`;
+        document.querySelector('#total').textContent = `$${total.toFixed(2)}`;
+
+        event.preventDefault();
+    });
+
+    const cerrarBoton = document.getElementById("cerrar_boton");
+    const tarjetaFlotante = document.getElementById("resultado_simulador");
+
+    cerrarBoton.addEventListener("click", function() {
+        tarjetaFlotante.style.display = "none";
+    });
+</script>
+
 
 <script>
     /*Toggle dropdown list*/
@@ -321,4 +306,5 @@
         return false;
     }
 </script>
+
 </html>
