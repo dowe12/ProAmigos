@@ -24,7 +24,7 @@
 	<div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
 		<!-- Logo -->
 		<div class="text-indigo-500 md:order-1">
-			<!-- Heroicon - Chip Outline -->
+
 			<img class="mr-5"
             src="{{ asset('logo.png') }}"
             width="40" height="90"
@@ -35,10 +35,10 @@
                 <!-- Active Link = text-indigo-500
                 Inactive Link = hover:text-indigo-500 -->
 				<li class="md:px-4 md:py-2 text-indigo-500"><a href="{{ route('home') }}">Home</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">¿Quienes somos?</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('info') }}">¿Quienes somos?</a></li>
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('simulador') }}">Simulador de credito</a></li>
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Noticias</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Documentos</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('documentos') }}">Documentos</a></li>
 			</ul>
 		</div>
 		<div class="order-2 md:order-3">
@@ -180,11 +180,11 @@
     </div>
     <!--footer -->
 
-    <footer class="  text-center ">
+    <footer class="  text-center  ">
         <div class="mx-auto w-full max-w-screen-xl">
             <div class="grid grid-cols-2 gap-4 px-4 py-6 lg:py-8 md:grid-cols-3">
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">¿Quiénes somos?
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray">¿Quiénes somos?
                     </h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">
@@ -198,7 +198,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Documentos</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray">Documentos</h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Estatutos</a>
@@ -213,7 +213,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Más Información
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray">Más Información
                         de Interés Público </h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">

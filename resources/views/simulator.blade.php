@@ -5,16 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Simulador crédito Proamigos</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('/css.css') }}">
 </head>
-
-<style>
-
-
-</style>
 
 <body>
     <!-- navbar -->
@@ -22,22 +17,20 @@
 	<div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
 		<!-- Logo -->
 		<div class="text-indigo-500 md:order-1">
-			<!-- Heroicon - Chip Outline -->
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-				stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-					d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-			</svg>
+			<img class="mr-5"
+            src="{{ asset('logo.png') }}"
+            width="40" height="90"
+             />
 		</div>
 		<div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
 			<ul class="flex font-semibold justify-between">
                 <!-- Active Link = text-indigo-500
                 Inactive Link = hover:text-indigo-500 -->
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('home') }}">Home</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">¿Quienes somos?</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('info') }}">¿Quienes somos?</a></li>
 				<li class="md:px-4 md:py-2 text-indigo-500"><a href="{{ route('simulador') }}">Simulador de credito</a></li>
 				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Noticias</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Documentos</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('documentos') }}">Documentos</a></li>
 			</ul>
 		</div>
 		<div class="order-2 md:order-3">
@@ -73,14 +66,14 @@
 
                 <div class="mb-4">
                     <label for="monto_credito" class="text-lg font-medium">Monto del crédito:</label>
-                    <input type="text" id="monto_credito"
-                        class="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    <input type="number" id="monto_credito"
+                        class="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Ingresa el monto del crédito" required>
                 </div>
                 <div class="mb-4">
                     <label for="plazo_meses" class="text-lg font-medium">Plazo (en meses):</label>
-                    <input for="plazo_meses" type="text" id="plazo_meses"
-                        class="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    <input for="plazo_meses" type="number" id="plazo_meses"
+                        class="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Ingresa el plazo del crédito en meses" required>
                 </div>
 
@@ -131,12 +124,11 @@
 
 
     <!--footer -->
-
-    <footer class="  text-center ">
+    <footer class="  text-center  ">
         <div class="mx-auto w-full max-w-screen-xl">
             <div class="grid grid-cols-2 gap-4 px-4 py-6 lg:py-8 md:grid-cols-3">
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">¿Quiénes somos?
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray">¿Quiénes somos?
                     </h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">
@@ -150,7 +142,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Documentos</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray">Documentos</h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Estatutos</a>
@@ -165,7 +157,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Más Información
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray">Más Información
                         de Interés Público </h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">
@@ -266,45 +258,5 @@
     });
 </script>
 
-
-<script>
-    /*Toggle dropdown list*/
-    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-    var navMenuDiv = document.getElementById("nav-content");
-    var navMenu = document.getElementById("nav-toggle");
-
-    document.onclick = check;
-
-    function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-            // click NOT on the menu
-            if (checkParent(target, navMenu)) {
-                // click on the link
-                if (navMenuDiv.classList.contains("hidden")) {
-                    navMenuDiv.classList.remove("hidden");
-                } else {
-                    navMenuDiv.classList.add("hidden");
-                }
-            } else {
-                // click both outside link and outside menu, hide menu
-                navMenuDiv.classList.add("hidden");
-            }
-        }
-    }
-
-    function checkParent(t, elm) {
-        while (t.parentNode) {
-            if (t == elm) {
-                return true;
-            }
-            t = t.parentNode;
-        }
-        return false;
-    }
-</script>
 
 </html>

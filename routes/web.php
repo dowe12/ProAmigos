@@ -23,8 +23,13 @@ Route::get('/simulador', function () {
     return view('simulator');
 })->name('simulador');
 
+Route::get('/informacion', function () {
+    return view('info');
+})->name('info');
 
-
+Route::get('/documentos', function () {
+    return view('documentos');
+})->name('documentos');
 
 
 /* Rutas privadas chavales*/
